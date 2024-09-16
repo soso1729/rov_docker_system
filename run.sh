@@ -5,6 +5,7 @@ WORK_DIR="$(pwd)/userdir"
 LOCAL_DIR="/home"
 IMAGE_NAME="ros:noetic"
 CONTAINER_NAME="rov_ros_noetic"  
+HOST_NAME="rov_noetic"
 GUI_MODE=false
 
 while [[ $# -gt 0 ]]; do
@@ -52,11 +53,13 @@ if [ "$container_exists" == "$CONTAINER_NAME" ]; then
 else
     echo "Creating a new container $CONTAINER_NAME..."
 
+##コンテナ作成(GUI運用)
     if [ "$GUI_MODE" = true ]; then
         echo "Starting Docker container with GUI support (ROS Noetic)..."
-        xhost +local:docker  # X11フォワーディングの許可
+        xhost +local:docker  
         docker run -it \
-            --name="$CONTAINER_NAME" \
+            --name="${CONTAINER_NAME}_gui" \
+            --hostname="$HOST_NAME" \
             --env="DISPLAY" \
             --env="QT_X11_NO_MITSHM=1" \
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
@@ -82,17 +85,16 @@ else
                 echo 'ROS workspace already exists. Sourcing workspace...'
                 source /root/userdir/devel/setup.bash
             fi
-
-            # rvizの実行例
-            echo 'Launching rviz...'
-            rviz
             bash
             "
-        xhost -local:docker  # X11フォワーディングのリセット
+        xhost -local:docker
+
+##コンテナ作成(CUI運用)
     else
         echo "Starting Docker container in CUI mode (ROS Noetic)..."
         docker run -it \
-            --name="$CONTAINER_NAME" \
+            --name="${CONTAINER_NAME}_cui" \
+            --hostname="$HOST_NAME" \
             --volume="$WORK_DIR:/root/userdir" \
             $IMAGE_NAME bash -c "
             # ROS環境をセットアップ
