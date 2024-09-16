@@ -3,13 +3,17 @@
 WORK_DIR="$(pwd)/userdir"
 IMAGE_NAME="ros:noetic"
 CONTAINER_NAME="rov_ros_noetic"  
-HOST_NAME="rov_noetic"
+HOST_NAME="rov_noetic_cui"
 GUI_MODE=false
 GIT_URL="https://github.com/soso1729/rov_docker_system.git"
 
-sudo apt update
+# システムを更新
+sudo apt update && sudo apt upgrade
+
+# 最新のソースコードを取得
 git pull origin main
 
+# オプション解析
 while [[ $# -gt 0 ]]; do
     case $1 in
         --GUI)
@@ -46,12 +50,17 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
+# ROSワークスペースディレクトリの作成
 if [ ! -d "$WORK_DIR" ]; then
     echo "Creating ROS workspace directory at $WORK_DIR"
     mkdir -p "$WORK_DIR/src"
 fi
 
+# 既存コンテナの確認
 container_exists=$(docker ps -a --filter "name=^/${CONTAINER_NAME}$" --format '{{.Names}}')
+
+# ROS NoeticのDockerイメージを取得
+docker pull "$IMAGE_NAME"
 
 if [ "$container_exists" == "$CONTAINER_NAME" ]; then
     echo "Container $CONTAINER_NAME already exists. Starting it..."
@@ -59,7 +68,7 @@ if [ "$container_exists" == "$CONTAINER_NAME" ]; then
 else
     echo "Creating a new container $CONTAINER_NAME..."
 
-##コンテナ作成(GUI運用)
+    ## コンテナ作成(GUI運用)
     if [ "$GUI_MODE" = true ]; then
         echo "Starting Docker container with GUI support (ROS Noetic)..."
         xhost +local:docker  
@@ -71,13 +80,6 @@ else
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
             --volume="$WORK_DIR:/root/userdir" \
             $IMAGE_NAME bash -c "
-
-            # ROS Desktop Fullがインストールされていない場合にインストール
-            if [ ! -d /opt/ros/noetic ]; then
-                echo 'Installing ros-noetic-desktop-full...'
-                apt update
-                apt install -y ros-noetic-desktop-full
-            fi
 
             # ROS環境をセットアップ
             source /opt/ros/noetic/setup.bash
@@ -97,7 +99,7 @@ else
             "
         xhost -local:docker
 
-##コンテナ作成(CUI運用)
+    ## コンテナ作成(CUI運用)
     else
         echo "Starting Docker container in CUI mode (ROS Noetic)..."
         docker run -it \
