@@ -72,8 +72,6 @@ else
             --volume="$WORK_DIR:/root/userdir" \
             $IMAGE_NAME bash -c "
 
-            rsync -av --delete /root/userdir/ $WORK_DIR/
-
             # ROS Desktop Fullがインストールされていない場合にインストール
             if [ ! -d /opt/ros/noetic ]; then
                 echo 'Installing ros-noetic-desktop-full...'
@@ -95,8 +93,6 @@ else
                 source /root/userdir/devel/setup.bash
             fi
 
-            trap 'rsync -av --delete /root/userdir/ $WORK_DIR/' EXIT
-
             bash
             "
         xhost -local:docker
@@ -109,8 +105,6 @@ else
             --hostname="$HOST_NAME" \
             --volume="$WORK_DIR:/root/userdir" \
             $IMAGE_NAME bash -c "
-
-            rsync -av --delete /root/userdir/ $WORK_DIR/
 
             # ROS環境をセットアップ
             source /opt/ros/noetic/setup.bash
@@ -125,9 +119,6 @@ else
                 echo 'ROS workspace already exists. Sourcing workspace...'
                 source /root/userdir/devel/setup.bash
             fi
-
-            trap 'rsync -av --delete /root/userdir/ $WORK_DIR/' 
-            EXIT
 
             bash
             "
