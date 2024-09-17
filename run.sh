@@ -63,6 +63,7 @@ container_exists=$(docker ps -a --filter "name=^/${CONTAINER_NAME}$" --format '{
 docker pull "$IMAGE_NAME"
 
 if [ "$container_exists" == "$CONTAINER_NAME" ]; then
+    xhost +local:docker
     echo "Container $CONTAINER_NAME already exists. Starting it..."
     docker start -ai "$CONTAINER_NAME"
 else
