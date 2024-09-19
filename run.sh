@@ -13,6 +13,8 @@ sudo apt update && sudo apt upgrade -y
 # 最新のソースコードを取得
 git pull origin main
 
+sudo apt install docker
+
 # オプション解析
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -144,7 +146,7 @@ else
 
         cd ~/rov_docker_system/userdir/src
         git clone https://github.com/fredvaz/bluerov2.git
-        
+
         echo "Starting Docker container in CUI mode (ROS Noetic)..."
         docker run -it \
             --name="${CONTAINER_NAME}" \
