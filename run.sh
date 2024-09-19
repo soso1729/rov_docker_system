@@ -126,6 +126,9 @@ else
             ros-noetic-global-planner \
             ros-noetic-rviz
 
+            ##シンボリックリンクの作成
+            ln -s ~/userdir/rov_move /tmp/rov_move
+
             cd ~/userdir
 
             bash
@@ -172,6 +175,9 @@ else
             ros-noetic-dwa-local-planner \
             ros-noetic-global-planner \
             ros-noetic-rviz
+            
+            ##シンボリックリンクの作成
+            ln -s ~/userdir/rov_move /tmp/rov_move
 
             cd ~/userdir
 
