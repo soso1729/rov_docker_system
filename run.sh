@@ -71,6 +71,10 @@ else
 
     ## コンテナ作成(GUI運用)
     if [ "$GUI_MODE" = true ]; then
+
+        cd ~/rov_docker_system/userdir/src
+        git clone https://github.com/fredvaz/bluerov2.git
+
         # X11ディレクトリの確認
         if [ ! -d "/tmp/.X11-unix" ]; then
             echo "/tmp/.X11-unix does not exist. Ensure X server is running."
@@ -137,6 +141,10 @@ else
 
     ## コンテナ作成(CUI運用)
     else
+
+        cd ~/rov_docker_system/userdir/src
+        git clone https://github.com/fredvaz/bluerov2.git
+        
         echo "Starting Docker container in CUI mode (ROS Noetic)..."
         docker run -it \
             --name="${CONTAINER_NAME}" \
@@ -175,7 +183,7 @@ else
             ros-noetic-dwa-local-planner \
             ros-noetic-global-planner \
             ros-noetic-rviz
-            
+
             ##シンボリックリンクの作成
             ln -s ~/userdir/rov_move /tmp/rov_move
 
