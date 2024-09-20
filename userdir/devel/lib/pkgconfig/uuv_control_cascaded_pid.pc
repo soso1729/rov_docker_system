@@ -1,0 +1,8 @@
+prefix=/root/userdir/devel
+
+Name: uuv_control_cascaded_pid
+Description: Description of uuv_control_cascaded_pid
+Version: 0.6.13
+Cflags: -I/root/userdir/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
