@@ -159,7 +159,15 @@ else
             ros-noetic-global-planner \
             ros-noetic-rviz
 
-            ##シンボリックリンクの作成
+            ## シンボリックリンクの作成
+            if [ -L /tmp/rov_move ]; then
+                echo 'Existing symbolic link /tmp/rov_move found. Removing it.'
+                rm -f /tmp/rov_move
+            elif [ -d /tmp/rov_move ]; then
+                echo 'Existing directory /tmp/rov_move found. Removing it.'
+                rm -rf /tmp/rov_move
+            fi
+
             ln -s ~/userdir/rov_move /tmp/rov_move
 
             cd ~/userdir
@@ -213,7 +221,15 @@ else
             ros-noetic-global-planner \
             ros-noetic-rviz
 
-            ##シンボリックリンクの作成
+            ## シンボリックリンクの作成
+            if [ -L /tmp/rov_move ]; then
+                echo 'Existing symbolic link /tmp/rov_move found. Removing it.'
+                rm -f /tmp/rov_move
+            elif [ -d /tmp/rov_move ]; then
+                echo 'Existing directory /tmp/rov_move found. Removing it.'
+                rm -rf /tmp/rov_move
+            fi
+
             ln -s ~/userdir/rov_move /tmp/rov_move
 
             cd ~/userdir
