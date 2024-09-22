@@ -136,6 +136,7 @@ else
             # ROS環境をセットアップ
             source /opt/ros/noetic/setup.bash
 
+
             # ワークスペースが存在しなければビルド
             if [ ! -f /root/userdir/devel/setup.bash ]; then
                 echo 'Setting up ROS workspace...'
@@ -147,6 +148,11 @@ else
                 source /root/userdir/devel/setup.bash
             fi
 
+            echo 'keyboard-configuration keyboard-configuration/layoutcode string jp' | debconf-set-selections &&
+            echo 'keyboard-configuration keyboard-configuration/modelcode string pc105' | debconf-set-selections &&
+            echo 'keyboard-configuration keyboard-configuration/xkb-keymap select jp' | debconf-set-selections &&
+
+
             # 各パッケージのインストール
             apt update && apt install -y \
             ros-noetic-gazebo-ros \
@@ -157,7 +163,9 @@ else
             ros-noetic-teb-local-planner \
             ros-noetic-dwa-local-planner \
             ros-noetic-global-planner \
-            ros-noetic-rviz
+            ros-noetic-rviz \
+            ros-noetic-rqt \
+            ros-noetic-rqt-common-plugins
 
             ## シンボリックリンクの作成
             if [ -L /tmp/rov_move ]; then
@@ -209,6 +217,11 @@ else
                 source /root/userdir/devel/setup.bash
             fi
 
+            echo 'keyboard-configuration keyboard-configuration/layoutcode string jp' | debconf-set-selections &&
+            echo 'keyboard-configuration keyboard-configuration/modelcode string pc105' | debconf-set-selections &&
+            echo 'keyboard-configuration keyboard-configuration/xkb-keymap select jp' | debconf-set-selections &&
+
+
             # 各パッケージのインストール
             apt update && apt install -y \
             ros-noetic-gazebo-ros \
@@ -219,7 +232,9 @@ else
             ros-noetic-teb-local-planner \
             ros-noetic-dwa-local-planner \
             ros-noetic-global-planner \
-            ros-noetic-rviz
+            ros-noetic-rviz \
+            ros-noetic-rqt \
+            ros-noetic-rqt-common-plugins
 
             ## シンボリックリンクの作成
             if [ -L /tmp/rov_move ]; then
