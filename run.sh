@@ -103,7 +103,7 @@ else
 
         cd ~/rov_docker_system/userdir/src
         git clone https://github.com/fredvaz/bluerov2.git
-        git clone https://github.com/uuvsimulator/uuv_simulator.git
+        git clone https://github.com/arturmiller/uuv_simulator.git
 
         # X11ディレクトリの確認
         if [ ! -d "/tmp/.X11-unix" ]; then
@@ -192,7 +192,7 @@ else
 
         cd ~/rov_docker_system/userdir/src
         git clone https://github.com/fredvaz/bluerov2.git
-        git clone https://github.com/uuvsimulator/uuv_simulator.git
+        git clone https://github.com/arturmiller/uuv_simulator.git
 
         echo "Starting Docker container in CUI mode (ROS Noetic)..."
         docker run -it \
