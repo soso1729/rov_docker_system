@@ -166,7 +166,8 @@ else
             ros-noetic-global-planner \
             ros-noetic-rviz \
             ros-noetic-rqt \
-            ros-noetic-rqt-common-plugins
+            ros-noetic-rqt-common-plugins \
+            ros-noetic-xacro
 
             ## シンボリックリンクの作成
             if [ -L /tmp/rov_move ]; then
@@ -237,7 +238,8 @@ else
             ros-noetic-global-planner \
             ros-noetic-rviz \
             ros-noetic-rqt \
-            ros-noetic-rqt-common-plugins
+            ros-noetic-rqt-common-plugins \
+            ros-noetic-xacro
 
             ## シンボリックリンクの作成
             if [ -L /tmp/rov_move ]; then
