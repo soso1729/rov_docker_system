@@ -1,6 +1,7 @@
 #!/bin/bash  
 
 WORK_DIR="$(pwd)/userdir"
+JOY_DIR="/dev/input"
 IMAGE_NAME="ros:noetic"
 CONTAINER_NAME="rov_ros_noetic"  
 HOST_NAME="rov_noetic_cui"
@@ -127,6 +128,7 @@ else
             --env="LIBGL_ALWAYS_SOFTWARE=1" \
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
             --volume="$WORK_DIR:/root/userdir" \
+            --device="$JOY_DIR:/dev/input" \
             $IMAGE_NAME bash -c "
 
             roscore &
@@ -167,7 +169,8 @@ else
             ros-noetic-rviz \
             ros-noetic-rqt \
             ros-noetic-rqt-common-plugins \
-            ros-noetic-xacro
+            ros-noetic-xacro \
+            ros-noetic-joy
 
             ## シンボリックリンクの作成
             if [ -L /tmp/rov_move ]; then
@@ -200,6 +203,7 @@ else
             --hostname="$HOST_NAME" \
             --volume="$WORK_DIR:/root/userdir" \
             --env="LIBGL_ALWAYS_SOFTWARE=1" \
+            --device="$JOY_DIR:/dev/input" \
             $IMAGE_NAME bash -c "
 
             # OpenGLライブラリのインストール
@@ -239,7 +243,8 @@ else
             ros-noetic-rviz \
             ros-noetic-rqt \
             ros-noetic-rqt-common-plugins \
-            ros-noetic-xacro
+            ros-noetic-xacro \
+            ros-noetic-joy
 
             ## シンボリックリンクの作成
             if [ -L /tmp/rov_move ]; then
