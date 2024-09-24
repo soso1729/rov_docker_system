@@ -1,7 +1,6 @@
 #!/bin/bash  
 
 # 初期設定
-WORK_DIR="$(pwd)/userdir"
 JOY_DIR="/dev/input"
 IMAGE_VER="noetic"
 IMAGE_NAME="ros:noetic"
@@ -9,6 +8,11 @@ CONTAINER_NAME="rov_ros_noetic"
 HOST_NAME="rov_noetic_cui"
 GUI_MODE=false
 GIT_URL="https://github.com/soso1729/rov_docker_system.git"
+
+# ワークスペースのデフォルト設定
+NOETIC_WORK_DIR="$(pwd)/ros_noetic_ws"
+HUMBLE_WORK_DIR="$(pwd)/ros_humble_ws"
+WORK_DIR="$NOETIC_WORK_DIR"  # デフォルトはNoetic用
 
 # システムを更新
 sudo apt update && sudo apt upgrade -y
@@ -63,6 +67,7 @@ while [[ $# -gt 0 ]]; do
             IMAGE_NAME="ros:humble"
             CONTAINER_NAME="rov_ros_${IMAGE_VER}_gui"
             HOST_NAME="rov_${IMAGE_VER}_gui"
+            WORK_DIR="$HUMBLE_WORK_DIR"  # Humble用のワークスペースに変更
             shift
             ;;
         -w|--workspace)
@@ -113,7 +118,9 @@ if [ "$IMAGE_VER" == "humble" ]; then
 
         # コンテナ作成(GUI運用のみ)
         cd "$WORK_DIR/src"
-        git clone https://github.com/tasada038/ping_sonar_ros.git  
+        git clone https://github.com/ros/ros_tutorials.git
+        git clone https://github.com/ros2/demos.git
+        git clone https://github.com/tasada038/ping_sonar_ros.git  # 新しいリポジトリのクローン
 
         # X11ディレクトリの確認
         if [ ! -d "/tmp/.X11-unix" ]; then
@@ -178,7 +185,7 @@ else
         ## コンテナ作成(GUI運用)
         if [ "$GUI_MODE" = true ]; then
 
-            cd ~/rov_docker_system/userdir/src
+            cd "$WORK_DIR/src"
             git clone https://github.com/fredvaz/bluerov2.git
             git clone https://github.com/arturmiller/uuv_simulator.git
 
@@ -266,7 +273,7 @@ else
         ## コンテナ作成(CUI運用)
         else
 
-            cd ~/rov_docker_system/userdir/src
+            cd "$WORK_DIR/src"
             git clone https://github.com/fredvaz/bluerov2.git
             git clone https://github.com/arturmiller/uuv_simulator.git
 
