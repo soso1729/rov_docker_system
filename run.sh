@@ -1,7 +1,6 @@
 #!/bin/bash  
 
 # 初期設定
-JOY_DIR="/dev/input"
 IMAGE_VER="noetic"
 IMAGE_NAME="ros:noetic"
 CONTAINER_NAME="rov_ros_noetic"  
@@ -10,8 +9,8 @@ GUI_MODE=false
 GIT_URL="https://github.com/soso1729/rov_docker_system.git"
 
 # ワークスペースのデフォルト設定
-NOETIC_WORK_DIR="$(pwd)/ros_noetic_ws"
-HUMBLE_WORK_DIR="$(pwd)/ros_humble_ws"
+NOETIC_WORK_DIR="$HOME/rov_docker_system/ros_noetic_ws"
+HUMBLE_WORK_DIR="$HOME/rov_docker_system/ros_humble_ws"
 WORK_DIR="$NOETIC_WORK_DIR"  # デフォルトはNoetic用
 
 # システムを更新
@@ -143,8 +142,8 @@ if [ "$IMAGE_VER" == "humble" ]; then
             --env="QT_X11_NO_MITSHM=1" \
             --env="LIBGL_ALWAYS_SOFTWARE=1" \
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-            --volume="$WORK_DIR:/root/userdir" \
-            --device="$JOY_DIR:/dev/input" \
+            --volume="${HOME}/rov_docker_system/ros_noetic_ws:/root/userdir" \
+            --device="/dev/input:/dev/input:rw" \
             $IMAGE_NAME bash -c "
             
             source /opt/ros/humble/setup.bash
@@ -210,8 +209,8 @@ else
                 --env="QT_X11_NO_MITSHM=1" \
                 --env="LIBGL_ALWAYS_SOFTWARE=1" \
                 --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-                --volume="$WORK_DIR:/root/userdir" \
-                --device="$JOY_DIR:/dev/input" \
+                --volume="$HOME/rov_docker_system/ros_noetic_ws:/root/userdir" \
+                --device="/dev/input:/dev/input:rw" \
                 $IMAGE_NAME bash -c "
                 roscore &
 
@@ -281,9 +280,9 @@ else
             docker run -it \
                 --name="${CONTAINER_NAME}" \
                 --hostname="$HOST_NAME" \
-                --volume="$WORK_DIR:/root/userdir" \
+                --volume="$HOME/rov_docker_system/ros_noetic_ws:/root/userdir" \
                 --env="LIBGL_ALWAYS_SOFTWARE=1" \
-                --device="$JOY_DIR:/dev/input" \
+                --device="/dev/input:/dev/input:rw" \
                 $IMAGE_NAME bash -c "
                 # OpenGLライブラリのインストール
                 apt update && apt install -y libgl1-mesa-glx libgl1-mesa-dri

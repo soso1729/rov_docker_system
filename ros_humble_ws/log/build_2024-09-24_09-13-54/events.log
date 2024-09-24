@@ -1,0 +1,363 @@
+[0.000000] (-) TimerEvent: {}
+[0.000156] (action_tutorials_cpp) JobQueued: {'identifier': 'action_tutorials_cpp', 'dependencies': OrderedDict()}
+[0.000215] (action_tutorials_py) JobQueued: {'identifier': 'action_tutorials_py', 'dependencies': OrderedDict()}
+[0.000257] (composition) JobQueued: {'identifier': 'composition', 'dependencies': OrderedDict()}
+[0.000275] (demo_nodes_cpp) JobQueued: {'identifier': 'demo_nodes_cpp', 'dependencies': OrderedDict()}
+[0.000292] (demo_nodes_cpp_native) JobQueued: {'identifier': 'demo_nodes_cpp_native', 'dependencies': OrderedDict()}
+[0.000308] (demo_nodes_py) JobQueued: {'identifier': 'demo_nodes_py', 'dependencies': OrderedDict()}
+[0.000325] (dummy_map_server) JobQueued: {'identifier': 'dummy_map_server', 'dependencies': OrderedDict()}
+[0.000339] (dummy_sensors) JobQueued: {'identifier': 'dummy_sensors', 'dependencies': OrderedDict()}
+[0.000353] (image_tools) JobQueued: {'identifier': 'image_tools', 'dependencies': OrderedDict()}
+[0.000388] (intra_process_demo) JobQueued: {'identifier': 'intra_process_demo', 'dependencies': OrderedDict()}
+[0.000405] (lifecycle) JobQueued: {'identifier': 'lifecycle', 'dependencies': OrderedDict()}
+[0.000420] (logging_demo) JobQueued: {'identifier': 'logging_demo', 'dependencies': OrderedDict()}
+[0.000434] (pendulum_msgs) JobQueued: {'identifier': 'pendulum_msgs', 'dependencies': OrderedDict()}
+[0.000447] (ping_sonar_ros) JobQueued: {'identifier': 'ping_sonar_ros', 'dependencies': OrderedDict()}
+[0.000461] (quality_of_service_demo_cpp) JobQueued: {'identifier': 'quality_of_service_demo_cpp', 'dependencies': OrderedDict()}
+[0.000476] (quality_of_service_demo_py) JobQueued: {'identifier': 'quality_of_service_demo_py', 'dependencies': OrderedDict()}
+[0.000491] (roscpp_tutorials) JobQueued: {'identifier': 'roscpp_tutorials', 'dependencies': OrderedDict()}
+[0.000505] (topic_monitor) JobQueued: {'identifier': 'topic_monitor', 'dependencies': OrderedDict()}
+[0.000520] (topic_statistics_demo) JobQueued: {'identifier': 'topic_statistics_demo', 'dependencies': OrderedDict()}
+[0.000540] (turtlesim) JobQueued: {'identifier': 'turtlesim', 'dependencies': OrderedDict()}
+[0.000555] (dummy_robot_bringup) JobQueued: {'identifier': 'dummy_robot_bringup', 'dependencies': OrderedDict([('dummy_map_server', '/root/userdir/install/dummy_map_server'), ('dummy_sensors', '/root/userdir/install/dummy_sensors')])}
+[0.000575] (lifecycle_py) JobQueued: {'identifier': 'lifecycle_py', 'dependencies': OrderedDict([('lifecycle', '/root/userdir/install/lifecycle')])}
+[0.000593] (pendulum_control) JobQueued: {'identifier': 'pendulum_control', 'dependencies': OrderedDict([('pendulum_msgs', '/root/userdir/install/pendulum_msgs')])}
+[0.000610] (rospy_tutorials) JobQueued: {'identifier': 'rospy_tutorials', 'dependencies': OrderedDict([('roscpp_tutorials', '/root/userdir/install/roscpp_tutorials')])}
+[0.000626] (ros_tutorials) JobQueued: {'identifier': 'ros_tutorials', 'dependencies': OrderedDict([('roscpp_tutorials', '/root/userdir/install/roscpp_tutorials'), ('turtlesim', '/root/userdir/install/turtlesim'), ('rospy_tutorials', '/root/userdir/install/rospy_tutorials')])}
+[0.000645] (roscpp_tutorials) JobStarted: {'identifier': 'roscpp_tutorials'}
+[0.008548] (dummy_map_server) JobStarted: {'identifier': 'dummy_map_server'}
+[0.011210] (dummy_sensors) JobStarted: {'identifier': 'dummy_sensors'}
+[0.014290] (lifecycle) JobStarted: {'identifier': 'lifecycle'}
+[0.018797] (pendulum_msgs) JobStarted: {'identifier': 'pendulum_msgs'}
+[0.022053] (turtlesim) JobStarted: {'identifier': 'turtlesim'}
+[0.025124] (action_tutorials_cpp) JobStarted: {'identifier': 'action_tutorials_cpp'}
+[0.028290] (action_tutorials_py) JobStarted: {'identifier': 'action_tutorials_py'}
+[0.038338] (roscpp_tutorials) JobProgress: {'identifier': 'roscpp_tutorials', 'progress': 'cmake'}
+[0.038585] (roscpp_tutorials) Command: {'cmd': ['/usr/bin/cmake', '/root/userdir/src/ros_tutorials/roscpp_tutorials', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/root/userdir/install/roscpp_tutorials'], 'cwd': '/root/userdir/build/roscpp_tutorials', 'env': OrderedDict([('HOSTNAME', 'rov_humble_gui'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/userdir/build/roscpp_tutorials'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.041143] (dummy_map_server) JobProgress: {'identifier': 'dummy_map_server', 'progress': 'cmake'}
+[0.041966] (dummy_map_server) Command: {'cmd': ['/usr/bin/cmake', '/root/userdir/src/demos/dummy_robot/dummy_map_server', '-DCMAKE_INSTALL_PREFIX=/root/userdir/install/dummy_map_server'], 'cwd': '/root/userdir/build/dummy_map_server', 'env': OrderedDict([('HOSTNAME', 'rov_humble_gui'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/userdir/build/dummy_map_server'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.044108] (dummy_sensors) JobProgress: {'identifier': 'dummy_sensors', 'progress': 'cmake'}
+[0.044354] (dummy_sensors) Command: {'cmd': ['/usr/bin/cmake', '/root/userdir/src/demos/dummy_robot/dummy_sensors', '-DCMAKE_INSTALL_PREFIX=/root/userdir/install/dummy_sensors'], 'cwd': '/root/userdir/build/dummy_sensors', 'env': OrderedDict([('HOSTNAME', 'rov_humble_gui'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/userdir/build/dummy_sensors'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.048025] (lifecycle) JobProgress: {'identifier': 'lifecycle', 'progress': 'cmake'}
+[0.048113] (lifecycle) Command: {'cmd': ['/usr/bin/cmake', '/root/userdir/src/demos/lifecycle', '-DCMAKE_INSTALL_PREFIX=/root/userdir/install/lifecycle'], 'cwd': '/root/userdir/build/lifecycle', 'env': OrderedDict([('HOSTNAME', 'rov_humble_gui'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/userdir/build/lifecycle'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.050878] (pendulum_msgs) JobProgress: {'identifier': 'pendulum_msgs', 'progress': 'cmake'}
+[0.051044] (pendulum_msgs) Command: {'cmd': ['/usr/bin/cmake', '/root/userdir/src/demos/pendulum_msgs', '-DCMAKE_INSTALL_PREFIX=/root/userdir/install/pendulum_msgs'], 'cwd': '/root/userdir/build/pendulum_msgs', 'env': OrderedDict([('HOSTNAME', 'rov_humble_gui'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/userdir/build/pendulum_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.053602] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'cmake'}
+[0.053658] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '/root/userdir/src/ros_tutorials/turtlesim', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/root/userdir/install/turtlesim'], 'cwd': '/root/userdir/build/turtlesim', 'env': OrderedDict([('HOSTNAME', 'rov_humble_gui'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/userdir/build/turtlesim'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.063330] (action_tutorials_cpp) JobProgress: {'identifier': 'action_tutorials_cpp', 'progress': 'cmake'}
+[0.063515] (action_tutorials_cpp) Command: {'cmd': ['/usr/bin/cmake', '/root/userdir/src/demos/action_tutorials/action_tutorials_cpp', '-DCMAKE_INSTALL_PREFIX=/root/userdir/install/action_tutorials_cpp'], 'cwd': '/root/userdir/build/action_tutorials_cpp', 'env': OrderedDict([('HOSTNAME', 'rov_humble_gui'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/userdir/build/action_tutorials_cpp'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099620] (-) TimerEvent: {}
+[0.163242] (dummy_map_server) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.165293] (roscpp_tutorials) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.166593] (dummy_sensors) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.169509] (pendulum_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.170334] (lifecycle) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.186081] (turtlesim) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199726] (-) TimerEvent: {}
+[0.298348] (dummy_map_server) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.299671] (dummy_sensors) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.299948] (-) TimerEvent: {}
+[0.316553] (roscpp_tutorials) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.317278] (dummy_sensors) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.325286] (pendulum_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.325666] (dummy_map_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.325940] (lifecycle) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.332239] (turtlesim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.333841] (roscpp_tutorials) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.343163] (lifecycle) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.351550] (turtlesim) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.360041] (pendulum_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400061] (-) TimerEvent: {}
+[0.482789] (dummy_map_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.483102] (dummy_sensors) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.492972] (roscpp_tutorials) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.498096] (lifecycle) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.500157] (-) TimerEvent: {}
+[0.501297] (dummy_sensors) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.501543] (dummy_sensors) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.501688] (dummy_sensors) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.505718] (dummy_map_server) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.506624] (dummy_map_server) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.506940] (dummy_sensors) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.508157] (dummy_map_server) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.511003] (turtlesim) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.515621] (roscpp_tutorials) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.515968] (dummy_map_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.516226] (roscpp_tutorials) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.516652] (pendulum_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.516969] (roscpp_tutorials) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.525386] (roscpp_tutorials) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.534282] (lifecycle) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.535195] (lifecycle) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.535997] (turtlesim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.536603] (lifecycle) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.536861] (turtlesim) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.540308] (turtlesim) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.540630] (pendulum_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.540807] (pendulum_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.540941] (pendulum_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.544208] (pendulum_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.549278] (turtlesim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.549617] (lifecycle) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600361] (-) TimerEvent: {}
+[0.671357] (dummy_sensors) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.689326] (roscpp_tutorials) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.692715] (dummy_sensors) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.693245] (dummy_sensors) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.694263] (dummy_sensors) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.701072] (dummy_sensors) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701308] (-) TimerEvent: {}
+[0.702692] (dummy_map_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.722324] (turtlesim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.723722] (dummy_map_server) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.724743] (dummy_map_server) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.727227] (dummy_map_server) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.731970] (dummy_map_server) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.732353] (roscpp_tutorials) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.732543] (roscpp_tutorials) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.733281] (roscpp_tutorials) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.735619] (pendulum_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.742249] (lifecycle) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.753096] (turtlesim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.756903] (pendulum_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.757233] (pendulum_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.758508] (turtlesim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.758817] (turtlesim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.759065] (pendulum_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.764261] (pendulum_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.770618] (turtlesim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.770846] (turtlesim) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.770984] (turtlesim) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.771111] (turtlesim) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.771247] (turtlesim) StderrLine: {'line': b'\n'}
+[0.771369] (turtlesim) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.771490] (turtlesim) StderrLine: {'line': b'  of the following names:\n'}
+[0.771606] (turtlesim) StderrLine: {'line': b'\n'}
+[0.771724] (turtlesim) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.771843] (turtlesim) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.771964] (turtlesim) StderrLine: {'line': b'\n'}
+[0.772084] (turtlesim) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.772216] (turtlesim) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.772344] (turtlesim) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.772462] (turtlesim) StderrLine: {'line': b'  installed.\n'}
+[0.772580] (turtlesim) StderrLine: {'line': b'\n'}
+[0.772698] (turtlesim) StderrLine: {'line': b'\x1b[0m\n'}
+[0.772815] (turtlesim) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.772953] (turtlesim) StdoutLine: {'line': b'See also "/root/userdir/build/turtlesim/CMakeFiles/CMakeOutput.log".\n'}
+[0.779763] (lifecycle) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.780268] (action_tutorials_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.783640] (action_tutorials_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.783777] (action_tutorials_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.783897] (action_tutorials_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.784016] (action_tutorials_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.784159] (action_tutorials_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.784290] (action_tutorials_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.784395] (action_tutorials_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.784510] (action_tutorials_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.784613] (action_tutorials_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.784716] (action_tutorials_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.784827] (action_tutorials_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.784938] (action_tutorials_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.785052] (lifecycle) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.785184] (turtlesim) CommandEnded: {'returncode': 1}
+[0.785516] (lifecycle) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.786482] (lifecycle) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.804230] (-) TimerEvent: {}
+[0.840719] (roscpp_tutorials) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.845919] (turtlesim) JobEnded: {'identifier': 'turtlesim', 'rc': 1}
+[0.904351] (-) TimerEvent: {}
+[0.987920] (dummy_sensors) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.997292] (dummy_map_server) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.999080] (roscpp_tutorials) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.999690] (roscpp_tutorials) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.004449] (-) TimerEvent: {}
+[1.031671] (pendulum_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.051356] (lifecycle) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.066904] (action_tutorials_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.104558] (-) TimerEvent: {}
+[1.150749] (action_tutorials_py) JobEnded: {'identifier': 'action_tutorials_py', 'rc': 'SIGINT'}
+[1.162709] (dummy_sensors) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.163728] (dummy_map_server) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.178289] (roscpp_tutorials) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.183298] (roscpp_tutorials) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.205293] (roscpp_tutorials) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.205462] (-) TimerEvent: {}
+[1.205608] (roscpp_tutorials) StdoutLine: {'line': b'See also "/root/userdir/build/roscpp_tutorials/CMakeFiles/CMakeOutput.log".\n'}
+[1.205767] (roscpp_tutorials) StderrLine: {'line': b'\x1b[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):\n'}
+[1.205938] (roscpp_tutorials) StderrLine: {'line': b'  Could NOT find Boost (missing: Boost_INCLUDE_DIR date_time thread)\n'}
+[1.206015] (roscpp_tutorials) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.206083] (roscpp_tutorials) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)\n'}
+[1.206150] (roscpp_tutorials) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindBoost.cmake:2360 (find_package_handle_standard_args)\n'}
+[1.206236] (roscpp_tutorials) StderrLine: {'line': b'  CMakeLists.txt:4 (find_package)\n'}
+[1.206308] (roscpp_tutorials) StderrLine: {'line': b'\n'}
+[1.206432] (roscpp_tutorials) StderrLine: {'line': b'\x1b[0m\n'}
+[1.209203] (roscpp_tutorials) JobEnded: {'identifier': 'roscpp_tutorials', 'rc': 'SIGINT'}
+[1.209748] (pendulum_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[1.226168] (dummy_map_server) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.227239] (dummy_sensors) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.231947] (lifecycle) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.234938] (dummy_sensors) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.236925] (dummy_map_server) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.245367] (action_tutorials_cpp) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (find_package):\n'}
+[1.245866] (action_tutorials_cpp) StderrLine: {'line': b'  By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this\n'}
+[1.246005] (action_tutorials_cpp) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[1.246121] (action_tutorials_cpp) StderrLine: {'line': b'  "example_interfaces", but CMake did not find one.\n'}
+[1.246250] (action_tutorials_cpp) StderrLine: {'line': b'\n'}
+[1.246362] (action_tutorials_cpp) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[1.246468] (action_tutorials_cpp) StderrLine: {'line': b'  "example_interfaces" with any of the following names:\n'}
+[1.246571] (action_tutorials_cpp) StderrLine: {'line': b'\n'}
+[1.246674] (action_tutorials_cpp) StderrLine: {'line': b'    example_interfacesConfig.cmake\n'}
+[1.246775] (action_tutorials_cpp) StderrLine: {'line': b'    example_interfaces-config.cmake\n'}
+[1.246879] (action_tutorials_cpp) StderrLine: {'line': b'\n'}
+[1.246980] (action_tutorials_cpp) StderrLine: {'line': b'  Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or\n'}
+[1.247087] (action_tutorials_cpp) StderrLine: {'line': b'  set "example_interfaces_DIR" to a directory containing one of the above\n'}
+[1.247196] (action_tutorials_cpp) StderrLine: {'line': b'  files.  If "example_interfaces" provides a separate development package or\n'}
+[1.247342] (action_tutorials_cpp) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[1.247454] (action_tutorials_cpp) StderrLine: {'line': b'\n'}
+[1.247563] (action_tutorials_cpp) StderrLine: {'line': b'\x1b[0m\n'}
+[1.247672] (action_tutorials_cpp) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.247791] (action_tutorials_cpp) StdoutLine: {'line': b'See also "/root/userdir/build/action_tutorials_cpp/CMakeFiles/CMakeOutput.log".\n'}
+[1.249893] (dummy_sensors) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.252439] (dummy_map_server) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.253150] (action_tutorials_cpp) JobEnded: {'identifier': 'action_tutorials_cpp', 'rc': 'SIGINT'}
+[1.262234] (pendulum_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.268486] (dummy_sensors) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.268988] (pendulum_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.269198] (dummy_map_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.285324] (pendulum_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.288335] (lifecycle) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.289450] (dummy_map_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.294661] (lifecycle) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.297471] (dummy_sensors) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.303304] (pendulum_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.305565] (-) TimerEvent: {}
+[1.308385] (lifecycle) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.322264] (lifecycle) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.333763] (pendulum_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.344826] (lifecycle) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.361480] (pendulum_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.367853] (dummy_map_server) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.375715] (dummy_sensors) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.380127] (dummy_sensors) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.402946] (lifecycle) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.405657] (-) TimerEvent: {}
+[1.406949] (lifecycle) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.414282] (dummy_map_server) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.418331] (dummy_map_server) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.484124] (dummy_sensors) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.505786] (-) TimerEvent: {}
+[1.507360] (lifecycle) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.508732] (dummy_sensors) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.522687] (dummy_map_server) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.535685] (lifecycle) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.551901] (dummy_map_server) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.558276] (dummy_sensors) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.571910] (dummy_sensors) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.586196] (lifecycle) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.600313] (lifecycle) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.601985] (dummy_map_server) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.605882] (-) TimerEvent: {}
+[1.615258] (dummy_map_server) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.668874] (dummy_sensors) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.669793] (dummy_sensors) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.704621] (lifecycle) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.704936] (lifecycle) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.705979] (-) TimerEvent: {}
+[1.711826] (dummy_map_server) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.712315] (dummy_map_server) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.733063] (pendulum_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.776718] (dummy_sensors) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.778848] (dummy_sensors) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.796735] (lifecycle) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.798745] (lifecycle) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.806089] (-) TimerEvent: {}
+[1.810024] (dummy_map_server) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.811508] (dummy_map_server) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.855669] (dummy_sensors) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.868354] (dummy_map_server) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.893748] (lifecycle) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.903498] (dummy_sensors) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.906202] (-) TimerEvent: {}
+[1.977438] (dummy_map_server) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.979249] (dummy_map_server) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.979574] (dummy_map_server) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.979753] (dummy_map_server) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.980769] (dummy_map_server) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.981005] (dummy_map_server) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.981800] (dummy_map_server) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.983512] (dummy_map_server) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.983785] (dummy_map_server) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.984219] (dummy_map_server) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.986032] (dummy_map_server) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.001522] (lifecycle) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:54 (find_package):\n'}
+[2.001822] (lifecycle) StderrLine: {'line': b'  By not providing "Findros_testing.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.001955] (lifecycle) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.002075] (lifecycle) StderrLine: {'line': b'  "ros_testing", but CMake did not find one.\n'}
+[2.002190] (lifecycle) StderrLine: {'line': b'\n'}
+[2.002361] (lifecycle) StderrLine: {'line': b'  Could not find a package configuration file provided by "ros_testing" with\n'}
+[2.002484] (lifecycle) StderrLine: {'line': b'  any of the following names:\n'}
+[2.002592] (lifecycle) StderrLine: {'line': b'\n'}
+[2.002709] (lifecycle) StderrLine: {'line': b'    ros_testingConfig.cmake\n'}
+[2.002813] (lifecycle) StderrLine: {'line': b'    ros_testing-config.cmake\n'}
+[2.002951] (lifecycle) StderrLine: {'line': b'\n'}
+[2.003058] (lifecycle) StderrLine: {'line': b'  Add the installation prefix of "ros_testing" to CMAKE_PREFIX_PATH or set\n'}
+[2.003165] (lifecycle) StderrLine: {'line': b'  "ros_testing_DIR" to a directory containing one of the above files.  If\n'}
+[2.003293] (lifecycle) StderrLine: {'line': b'  "ros_testing" provides a separate development package or SDK, be sure it\n'}
+[2.003409] (lifecycle) StderrLine: {'line': b'  has been installed.\n'}
+[2.003521] (lifecycle) StderrLine: {'line': b'\n'}
+[2.003625] (lifecycle) StderrLine: {'line': b'\x1b[0m\n'}
+[2.003736] (lifecycle) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.003853] (lifecycle) StdoutLine: {'line': b'See also "/root/userdir/build/lifecycle/CMakeFiles/CMakeOutput.log".\n'}
+[2.006276] (-) TimerEvent: {}
+[2.008557] (dummy_map_server) StdoutLine: {'line': b'-- Generating done\n'}
+[2.012134] (dummy_map_server) StdoutLine: {'line': b'-- Build files have been written to: /root/userdir/build/dummy_map_server\n'}
+[2.012628] (lifecycle) JobEnded: {'identifier': 'lifecycle', 'rc': 'SIGINT'}
+[2.021718] (dummy_sensors) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.024118] (dummy_sensors) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.024334] (dummy_sensors) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.024536] (dummy_sensors) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.024962] (dummy_map_server) JobEnded: {'identifier': 'dummy_map_server', 'rc': 'SIGINT'}
+[2.025555] (dummy_sensors) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.025760] (dummy_sensors) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.026786] (dummy_sensors) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.028452] (dummy_sensors) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.028742] (dummy_sensors) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.029444] (dummy_sensors) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.031025] (dummy_sensors) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.050055] (dummy_sensors) StdoutLine: {'line': b'-- Generating done\n'}
+[2.051981] (dummy_sensors) StdoutLine: {'line': b'-- Build files have been written to: /root/userdir/build/dummy_sensors\n'}
+[2.060779] (dummy_sensors) JobEnded: {'identifier': 'dummy_sensors', 'rc': 'SIGINT'}
+[2.085833] (pendulum_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.106368] (-) TimerEvent: {}
+[2.206657] (-) TimerEvent: {}
+[2.212452] (pendulum_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.234706] (pendulum_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.236411] (pendulum_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.259289] (pendulum_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.259556] (pendulum_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.259641] (pendulum_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.259706] (pendulum_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.276745] (pendulum_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.306796] (-) TimerEvent: {}
+[2.313830] (pendulum_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.353044] (pendulum_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.356123] (pendulum_msgs) StdoutLine: {'line': b'-- Build files have been written to: /root/userdir/build/pendulum_msgs\n'}
+[2.362075] (pendulum_msgs) JobEnded: {'identifier': 'pendulum_msgs', 'rc': 'SIGINT'}
+[2.372751] (composition) JobSkipped: {'identifier': 'composition'}
+[2.372832] (demo_nodes_cpp) JobSkipped: {'identifier': 'demo_nodes_cpp'}
+[2.372860] (demo_nodes_cpp_native) JobSkipped: {'identifier': 'demo_nodes_cpp_native'}
+[2.372879] (demo_nodes_py) JobSkipped: {'identifier': 'demo_nodes_py'}
+[2.372912] (image_tools) JobSkipped: {'identifier': 'image_tools'}
+[2.372929] (intra_process_demo) JobSkipped: {'identifier': 'intra_process_demo'}
+[2.372945] (logging_demo) JobSkipped: {'identifier': 'logging_demo'}
+[2.372961] (ping_sonar_ros) JobSkipped: {'identifier': 'ping_sonar_ros'}
+[2.372977] (quality_of_service_demo_cpp) JobSkipped: {'identifier': 'quality_of_service_demo_cpp'}
+[2.372992] (quality_of_service_demo_py) JobSkipped: {'identifier': 'quality_of_service_demo_py'}
+[2.373008] (topic_monitor) JobSkipped: {'identifier': 'topic_monitor'}
+[2.373050] (topic_statistics_demo) JobSkipped: {'identifier': 'topic_statistics_demo'}
+[2.373070] (dummy_robot_bringup) JobSkipped: {'identifier': 'dummy_robot_bringup'}
+[2.373088] (lifecycle_py) JobSkipped: {'identifier': 'lifecycle_py'}
+[2.373105] (pendulum_control) JobSkipped: {'identifier': 'pendulum_control'}
+[2.373121] (rospy_tutorials) JobSkipped: {'identifier': 'rospy_tutorials'}
+[2.373137] (ros_tutorials) JobSkipped: {'identifier': 'ros_tutorials'}
+[2.373154] (-) EventReactorShutdown: {}

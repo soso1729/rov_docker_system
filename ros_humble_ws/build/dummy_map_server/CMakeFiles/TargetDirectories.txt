@@ -1,0 +1,10 @@
+/root/userdir/build/dummy_map_server/CMakeFiles/uninstall.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/dummy_map_server_uninstall.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/dummy_map_server.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/test.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/edit_cache.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/rebuild_cache.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/list_install_components.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/install.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/install/local.dir
+/root/userdir/build/dummy_map_server/CMakeFiles/install/strip.dir

@@ -1,0 +1,11 @@
+[0.571s] Invoking command in '/root/userdir/src/ping_sonar_ros': PYTHONPATH=/root/userdir/build/ping_sonar_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/userdir/install/ping_sonar_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ping_sonar_ros build --build-base /root/userdir/build/ping_sonar_ros/build install --record /root/userdir/build/ping_sonar_ros/install.log --single-version-externally-managed install_data
+[0.778s] running egg_info
+[0.779s] creating ../../build/ping_sonar_ros/ping_sonar_ros.egg-info
+[0.779s] writing ../../build/ping_sonar_ros/ping_sonar_ros.egg-info/PKG-INFO
+[0.779s] writing dependency_links to ../../build/ping_sonar_ros/ping_sonar_ros.egg-info/dependency_links.txt
+[0.780s] writing entry points to ../../build/ping_sonar_ros/ping_sonar_ros.egg-info/entry_points.txt
+[0.780s] writing requirements to ../../build/ping_sonar_ros/ping_sonar_ros.egg-info/requires.txt
+[0.780s] writing top-level names to ../../build/ping_sonar_ros/ping_sonar_ros.egg-info/top_level.txt
+[0.780s] writing manifest file '../../build/ping_sonar_ros/ping_sonar_ros.egg-info/SOURCES.txt'
+[0.782s] error: package directory 'ping_sonar_ros/ping-python/brping' does not exist
+[0.801s] Invoked command in '/root/userdir/src/ping_sonar_ros' returned '1': PYTHONPATH=/root/userdir/build/ping_sonar_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/userdir/install/ping_sonar_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ping_sonar_ros build --build-base /root/userdir/build/ping_sonar_ros/build install --record /root/userdir/build/ping_sonar_ros/install.log --single-version-externally-managed install_data

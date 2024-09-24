@@ -1,0 +1,1 @@
+Invoking command in '/root/userdir/build/dummy_map_server': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/userdir/src/demos/dummy_robot/dummy_map_server -DCMAKE_INSTALL_PREFIX=/root/userdir/install/dummy_map_server

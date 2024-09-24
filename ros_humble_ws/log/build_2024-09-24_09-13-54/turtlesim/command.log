@@ -1,0 +1,2 @@
+Invoking command in '/root/userdir/build/turtlesim': /usr/bin/cmake /root/userdir/src/ros_tutorials/turtlesim -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/root/userdir/install/turtlesim
+Invoked command in '/root/userdir/build/turtlesim' returned '1': /usr/bin/cmake /root/userdir/src/ros_tutorials/turtlesim -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/root/userdir/install/turtlesim

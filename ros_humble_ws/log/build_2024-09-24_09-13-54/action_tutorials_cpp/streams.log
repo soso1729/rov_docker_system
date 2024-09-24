@@ -1,0 +1,34 @@
+[0.040s] Invoking command in '/root/userdir/build/action_tutorials_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/userdir/src/demos/action_tutorials/action_tutorials_cpp -DCMAKE_INSTALL_PREFIX=/root/userdir/install/action_tutorials_cpp
+[0.758s] -- The C compiler identification is GNU 11.4.0
+[0.759s] -- The CXX compiler identification is GNU 11.4.0
+[0.759s] -- Detecting C compiler ABI info
+[0.759s] -- Detecting C compiler ABI info - done
+[0.759s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.759s] -- Detecting C compile features
+[0.759s] -- Detecting C compile features - done
+[0.759s] -- Detecting CXX compiler ABI info
+[0.759s] -- Detecting CXX compiler ABI info - done
+[0.760s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.760s] -- Detecting CXX compile features
+[0.760s] -- Detecting CXX compile features - done
+[0.760s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.042s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.221s] [31mCMake Error at CMakeLists.txt:21 (find_package):
+[1.221s]   By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this
+[1.221s]   project has asked CMake to find a package configuration file provided by
+[1.221s]   "example_interfaces", but CMake did not find one.
+[1.221s] 
+[1.221s]   Could not find a package configuration file provided by
+[1.221s]   "example_interfaces" with any of the following names:
+[1.221s] 
+[1.222s]     example_interfacesConfig.cmake
+[1.222s]     example_interfaces-config.cmake
+[1.222s] 
+[1.222s]   Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or
+[1.222s]   set "example_interfaces_DIR" to a directory containing one of the above
+[1.222s]   files.  If "example_interfaces" provides a separate development package or
+[1.222s]   SDK, be sure it has been installed.
+[1.222s] 
+[1.222s] [0m
+[1.223s] -- Configuring incomplete, errors occurred!
+[1.223s] See also "/root/userdir/build/action_tutorials_cpp/CMakeFiles/CMakeOutput.log".

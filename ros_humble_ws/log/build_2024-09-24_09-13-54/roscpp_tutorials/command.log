@@ -1,0 +1,1 @@
+Invoking command in '/root/userdir/build/roscpp_tutorials': /usr/bin/cmake /root/userdir/src/ros_tutorials/roscpp_tutorials -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/root/userdir/install/roscpp_tutorials

@@ -1,0 +1,1 @@
+Invoking command in '/root/userdir/build/pendulum_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/userdir/src/demos/pendulum_msgs -DCMAKE_INSTALL_PREFIX=/root/userdir/install/pendulum_msgs
